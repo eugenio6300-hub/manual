@@ -1,0 +1,138 @@
+/* ===== 1. 폰트 설정 ===== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* ===== 2. 기본 리셋 ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== 3. 전체 기본 스타일 ===== */
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 16px; /* 모바일 기준 기본 글자 크기 */
+}
+
+/* ===== 4. 상단 제목 바 ===== */
+header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 12px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.25rem; /* 약 20px */
+  font-weight: 600;
+}
+
+/* ===== 5. 메인 콘텐츠 영역 ===== */
+main {
+  max-width: 720px;   /* PC에서도 너무 넓지 않게 */
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* ===== 6. 제목 계층 ===== */
+h2 {
+  font-size: 1.1rem; /* 약 17~18px */
+  margin: 32px 0 12px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem; /* 약 16px */
+  margin: 24px 0 8px;
+  font-weight: 600;
+}
+
+/* ===== 7. 문단 ===== */
+p, li {
+  font-size: 1rem; /* 기본 본문 */
+  margin-bottom: 8px;
+}
+
+/* ===== 8. 강조 텍스트 ===== */
+strong {
+  color: #ff7a00;     /* 주황색 */
+  font-weight: 600;
+}
+
+/* ===== 9. 코드 블록 ===== */
+pre {
+  background-color: #f6f8fa;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+code {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.9rem;
+}
+
+/* ===== 10. 링크 ===== */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 11. PC 화면 보정 ===== */
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 32px 24px;
+  }
+}
+
+/* ===== 일반 텍스트 리스트 ===== */
+.text-list {
+  list-style: disc;        /* 점 표시 */
+  padding-left: 20px;
+  margin: 16px 0;
+}
+
+.text-list li {
+  margin-bottom: 6px;
+}
+
+/* ===== 버튼용 리스트 ===== */
+.button-list {
+  list-style: none;        /* 점 제거 */
+  padding-left: 0;
+  margin: 16px 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+  gap: 12px;
+}
+
+.button-list li a {
+  display: block;
+  padding: 16px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #fafafa;
+}
+
+.button-list li a:hover {
+  background-color: #f0f0f0;
+}
+
